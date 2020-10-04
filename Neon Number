@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int i,square,sum=0;
+    printf("Enter a number: ");
+    scanf("%d",&i);
+    square = i*i;
+    while(square>0)
+    {
+        sum += square%10;
+        square/=10;
+    }
+    if(sum == i)
+        printf("%d is neon number",i);
+    else
+        printf("%d isn't Neon number",i);
+    return 0;
+}
